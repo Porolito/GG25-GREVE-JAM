@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 3518683652391358697}
   - component: {fileID: 2155589797129050199}
   - component: {fileID: 8977759721173658117}
+  - component: {fileID: -4951991724911241499}
   m_Layer: 0
   m_Name: Projectile
   m_TagString: Enemy
@@ -147,3 +148,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 889dcffdff0b7bd4389650d56c0dc03c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  projectileBehavior: {fileID: -4951991724911241499}
+--- !u!114 &-4951991724911241499
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2537843624732873161}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ab581113a089b6a41a0be8147ff72d96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  points:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  m_projSpeed: 0.3
+  m_projectileTransform: {fileID: 6511042810057364406}
+  m_isMoving: 1
