@@ -6,7 +6,7 @@ public class CrowdCollision : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collider)
     {
-        if (collider.transform.CompareTag("Enemy"))
+        if (collider.transform.CompareTag("Lacrym") || collider.transform.CompareTag("Donut") & collider.GetComponent<ProjectileBehavior>().m_isMoving == true)
         {
             m_crowdMovement.HandleEnemyBounceBack();
         }

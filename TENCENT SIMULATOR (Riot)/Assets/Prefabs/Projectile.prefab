@@ -149,6 +149,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   projectileBehavior: {fileID: -4951991724911241499}
+  m_isDragged: 0
 --- !u!114 &-4951991724911241499
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -23,12 +23,14 @@ public class ProjectileBehavior : MonoBehaviour
         return Vector2.Lerp(d, e, currentT);
     }
 
-    public void Init(Transform anchor0, Transform control0, Transform control1, Transform anchor1)
+    public void Init(Transform anchor0, Transform control0, Transform control1, Transform anchor1, float speed)
     {
         points[0] = anchor0;
         points[1] = control0;
         points[2] = control1;
         points[3] = anchor1;
+
+        m_projSpeed = speed;
     }
 
     private void Update()
