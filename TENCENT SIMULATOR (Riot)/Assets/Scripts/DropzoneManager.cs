@@ -12,10 +12,6 @@ public class DropzoneManager : MonoBehaviour
             {
                 Destroy(collision.gameObject);
             }
-            if (collision.gameObject.tag == m_Type.ToString())
-            {
-                Destroy(collision.gameObject);
-            }
             else
             {
                 Debug.Log("Wrong dropzone");
