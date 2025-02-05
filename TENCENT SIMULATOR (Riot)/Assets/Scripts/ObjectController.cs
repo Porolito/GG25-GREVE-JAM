@@ -7,6 +7,8 @@ public class ObjectController : MonoBehaviour
 
     [SerializeField] ProjectileBehavior projectileBehavior;
 
+    public bool m_isDragged;
+
     void OnMouseDown()
     {
         screenPoint = Camera.main.WorldToScreenPoint(gameObject.transform.position);
@@ -22,6 +24,12 @@ public class ObjectController : MonoBehaviour
 
         Vector3 curPosition = Camera.main.ScreenToWorldPoint(curScreenPoint) + offset;
         transform.position = curPosition;
+        m_isDragged = true;
 
+    }
+
+    private void OnMouseUp()
+    {
+        m_isDragged = false;
     }
 }
