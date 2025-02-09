@@ -623,6 +623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_crowdMovement: {fileID: 77478548}
+  m_PlayerScore: {fileID: 376135046}
 --- !u!50 &77478551
 Rigidbody2D:
   serializedVersion: 5
